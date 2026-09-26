@@ -1,0 +1,40 @@
+baseURL = "https://advaitkhaire.com"
+theme = "hugo-bearblog"
+
+title = "Advait Khaire"
+author = "Advait Khaire"
+copyright = "Copyright © 2026, Advait Khaire."
+languageCode = "en-US"
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/blog/:slug/"
+
+[params]
+  description = "Personal site of Advait Khaire — cybersecurity, writing, and projects."
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
+  title = "Advait Khaire"
+  enablePostNavigator = true
+  dateFormat = "2006-01-02"
+
+[markup]
+  [markup.highlight]
+    style = "friendly"
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 2
+
+[[menu.main]]
+  name = "Links"
+  url = "/links/"
+  weight = 3
