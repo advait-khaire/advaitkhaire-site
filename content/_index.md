@@ -2,7 +2,7 @@
 
 <div class="block">
 
-<img src="images/sky.jpeg" alt="The city skyline">
+<img src="images/ray.jpeg">
 
 Hi, I'm Advait! This is my corner of the internet!
 
