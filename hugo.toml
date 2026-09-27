@@ -1,17 +1,24 @@
 baseURL = 'https://advaitkhaire.com/'
-languageCode = 'en-US'
+locale = 'en-US'
 title = 'Advait Khaire'
 theme = 'denshi'
 
 [markup.goldmark.renderer]
 unsafe = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
 name = 'Advait Khaire'
-email = 'advait@advaitkhaire.com'
+email = 'you@advaitkhaire.com'
 
 [params.links]
-Email = 'mailto:advait@advaitkhaire.com'
+Email = 'mailto:you@advaitkhaire.com'
+GitHub = 'https://github.com/advait-khaire'
+# Matrix = 'https://matrix.to/#/@you:example.org'
+# XMPP = 'xmpp:you@example.org?join'
 
 # 88x31 "buttons" shown at the bottom of every page. Each needs an image
 # (put files under static/images/badges/) and a link. Uncomment and add
