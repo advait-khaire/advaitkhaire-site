@@ -15,7 +15,7 @@ name = 'Advait Khaire'
 email = 'advait@advaitkhaire.com'
 
 [params.links]
-Email = 'mailto:you@advaitkhaire.com'
+Email = 'mailto:advait@advaitkhaire.com'
 
 # 88x31 "buttons" shown at the bottom of every page. Each needs an image
 # (put files under static/images/badges/) and a link. Uncomment and add
