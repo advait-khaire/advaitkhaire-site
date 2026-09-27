@@ -12,13 +12,10 @@ unsafe = true
 
 [params]
 name = 'Advait Khaire'
-email = 'you@advaitkhaire.com'
+email = 'advait@advaitkhaire.com'
 
 [params.links]
 Email = 'mailto:you@advaitkhaire.com'
-GitHub = 'https://github.com/advait-khaire'
-# Matrix = 'https://matrix.to/#/@you:example.org'
-# XMPP = 'xmpp:you@example.org?join'
 
 # 88x31 "buttons" shown at the bottom of every page. Each needs an image
 # (put files under static/images/badges/) and a link. Uncomment and add
