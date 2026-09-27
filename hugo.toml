@@ -1,40 +1,26 @@
-baseURL = "https://advaitkhaire.com"
-theme = "hugo-bearblog"
+baseURL = 'https://advaitkhaire.com/'
+languageCode = 'en-US'
+title = 'Advait Khaire'
+theme = 'denshi'
 
-title = "Advait Khaire"
-author = "Advait Khaire"
-copyright = "Copyright © 2026, Advait Khaire."
-languageCode = "en-US"
-
-enableRobotsTXT = true
-
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
-
-[permalinks]
-  blog = "/blog/:slug/"
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
-  description = "Personal site of Advait Khaire — cybersecurity, writing, and projects."
-  favicon = "images/favicon.png"
-  images = ["images/share.png"]
-  title = "Advait Khaire"
-  enablePostNavigator = true
-  dateFormat = "2006-01-02"
+name = 'Advait Khaire'
+email = 'you@advaitkhaire.com'
 
-[markup]
-  [markup.highlight]
-    style = "friendly"
-    lineNos = true
-    lineNumbersInTable = false
-    codeFences = true
+[params.links]
+Email = 'mailto:you@advaitkhaire.com'
+GitHub = 'https://github.com/advait-khaire'
+# Matrix = 'https://matrix.to/#/@you:example.org'
+# XMPP = 'xmpp:you@example.org?join'
 
-[[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 2
-
-[[menu.main]]
-  name = "Links"
-  url = "/links/"
-  weight = 3
+# 88x31 "buttons" shown at the bottom of every page. Each needs an image
+# (put files under static/images/badges/) and a link. Uncomment and add
+# your own -- either badges you've made, or ones from sites/communities
+# you want to cross-link to (ask first if it's someone else's personal badge).
+# [[params.badges]]
+# image = "images/badges/example.png"
+# link = "https://example.com"
+# alt = "Example Badge"

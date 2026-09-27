@@ -1,0 +1,22 @@
+<hr/>
+<nav>
+	{{- $isregular := (in .Site.RegularPages .Page) -}}
+	{{- $title := .Title -}}
+	{{- with .Site.Params.links.email -}}
+	{{- if $isregular }}<p style="text-align: right;">[<a href="{{ . }}?subject=RE: {{ $title }}">↰ Reply-to</a>]</p>{{ end }}
+	{{- end -}}
+	<p>
+	{{- if .IsHome }}{{ else }}<p>[<a href="/">{{ .Site.Title }}</a>] ~ {{ end -}}
+	{{- $count := 0 -}}
+	{{ with .Site.Params.links }}
+		{{- range $key, $value := . }}
+		{{ if gt $count 0 }}~{{ end }}
+		[<a href="{{ $value | safeURL }}">{{ $key }}</a>]
+			{{- $count = add $count 1 -}}
+		{{- end }}
+	{{- end }}
+	</p>
+	{{- if (not $isregular) -}}
+	{{ partial "buttons.html" . }}
+	{{- end }}
+</nav>

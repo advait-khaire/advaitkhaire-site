@@ -1,0 +1,10 @@
+{{/* Optional row of 88x31 "buttons" (a personal-web convention for
+     cross-linking to sites/communities). Configure these via
+     [[params.badges]] in hugo.toml -- see README for the format. */}}
+{{ with site.Params.badges }}
+<div style="text-align: center;">
+    {{ range . }}
+    <a href="{{ .link | safeURL }}"><img src="{{ .image | relURL }}" alt="{{ .alt }}" title="{{ .alt }}"></a>
+    {{ end }}
+</div>
+{{ end }}

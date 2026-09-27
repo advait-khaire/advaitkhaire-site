@@ -1,0 +1,19 @@
+name = 'DenshiHugo'
+license = 'MIT'
+licenselink = 'https://github.com/aledenshi/Hugo/LICENSE'
+description = 'Hugo theme used on DenshiSite.'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/aledenshi/Hugo'
+
+# If you have a running demo of the theme
+demosite = 'https://denshi.org'
+
+# Taxonomy terms
+tags = ['blog']
+features = ['reply-to']
+
+# If the theme has a single author
+[author]
+  name = 'Alex (Denshi)'
+  homepage = 'https://denshi.org'

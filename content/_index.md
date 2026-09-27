@@ -1,15 +1,23 @@
-+++
-title = "Home"
-menu = "main"
-weight = 1
-+++
+<div class="columns">
 
-# Hi, I'm Advait.
+<div class="block">
 
-This is my personal corner of the internet — home to my [blog](/blog/) and a page of [useful links](/links/). No trackers, no bloat, just words.
+<img src="images/sky.jpeg" alt="The city skyline">
 
----
+Hey, I'm Advait! This is my little corner of the internet!
 
-Feel free to look around. If something here is useful to you, or you just want to say hi, reach out.
+Regardless of how you found me, welcome. This is my personal website, home to my [blog](/blog/). All pages have a **reply-to** link, letting you share your thoughts with me over email.
 
-[Get in touch →](/links/)
+**_[Contact Me →](mailto:advait@advaitkhaire.com)_**
+
+</div>
+
+<div class="block">
+
+## Blog
+
+{{< article-list category="blog" >}}
+
+</div>
+
+</div>

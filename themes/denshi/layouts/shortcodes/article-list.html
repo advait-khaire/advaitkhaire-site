@@ -1,0 +1,6 @@
+<ul>
+	{{- range where .Site.RegularPages "Type" (.Get "category") | first 7 }}
+	<li>{{ .Date.Format "02/01/06" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{- end }}
+	<li><i><a href="/blog">More...</a></i></li>
+</ul>

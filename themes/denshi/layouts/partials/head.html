@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+{{ with .Params.css }}<link rel="stylesheet" href="{{ . }}">
+{{- else -}}
+<link rel="stylesheet" href="/style.css">
+{{- with .Section }}
+<link rel="stylesheet" href="/{{ . }}/{{ . }}.css">
+{{- end }}
+{{- end }}
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}</title>
+<meta name="author" content="{{ .Site.Params.email }} ({{ .Site.Params.name }})">
+<meta name="description" content="{{- plainify (chomp .Summary) -}}">
+<!-- OpenGraph specification -->
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}"/>
+<meta property="og:description" content="{{- plainify (chomp .Summary) -}}"/>
+<meta property="og:url" content="{{ .Permalink}}"/>
+{{- $images := .Page.Resources.ByType "image" }}
+{{- with index $images 0 }}
+{{- $processed := .Resize "600x" }}
+{{- $processed := $processed.Crop "512x512" }}
+<meta property="og:image" content="{{ $processed.RelPermalink }}"/>
+{{- end -}}

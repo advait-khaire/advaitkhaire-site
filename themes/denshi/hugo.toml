@@ -1,0 +1,10 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
+
+[params]
+#Email = 'mailto:billy@example.org'
+#Matrix = 'https://matrix.to/#/@billy:example.org'
+#XMPP = 'xmpp:billy@example.org?join'
+#i2p = "http://denshiky5uqsfq7ra2djupn4i2l7jep27pfedpzoxiaujsuql4za.b32.i2p"
+#tor = "http://denshibjj744ww6lu7n4rjz3ufn7232hhbyrl3wyit2rz77f24p3gbid.onion"
