@@ -113,3 +113,7 @@ img {
 		columns: 1;
 	}
 }
+
+.badges {
+	text-align: center;
+}
