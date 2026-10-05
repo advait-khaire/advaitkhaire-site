@@ -14,14 +14,12 @@ unsafe = true
 name = 'Advait Khaire'
 email = 'advait@advaitkhaire.com'
 
-[params.links]
-Email = 'mailto:advait@advaitkhaire.com'
-
 # 88x31 "buttons" shown at the bottom of every page. Each needs an image
 # (put files under static/images/badges/) and a link. Uncomment and add
 # your own -- either badges you've made, or ones from sites/communities
 # you want to cross-link to (ask first if it's someone else's personal badge).
-# [[params.badges]]
-# image = "images/badges/example.png"
-# link = "https://example.com"
-# alt = "Example Badge"
+
+[[params.badges]]
+image = "images/badges/email.png"
+link = "mailto:advait@advaitkhaire.com"
+alt = "Drop me an email!"
