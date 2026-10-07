@@ -114,6 +114,6 @@ img {
 	}
 }
 
-.badges {
-	text-align: center;
+footer img {
+	vertical-align: middle;
 }

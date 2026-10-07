@@ -6,7 +6,7 @@
 	{{- if $isregular }}<p style="text-align: right;">[<a href="{{ . }}?subject=RE: {{ $title }}">↰ Reply-to</a>]</p>{{ end }}
 	{{- end -}}
 	<p>
-	{{- if .IsHome }}{{ else }}<p>[<a href="/">{{ .Site.Title }}</a>] ~ {{ end -}}
+	{{- if .IsHome }}{{ else }}<a href="/"><img src="/images/badges/advait.png" alt="{{ .Site.Title }}" title="{{ .Site.Title }}"></a> {{ end -}}
 	{{- $count := 0 -}}
 	{{ with .Site.Params.links }}
 		{{- range $key, $value := . }}
@@ -15,8 +15,8 @@
 			{{- $count = add $count 1 -}}
 		{{- end }}
 	{{- end }}
-	</p>
 	{{- if (not $isregular) -}}
 	{{ partial "buttons.html" . }}
 	{{- end }}
+	</p>
 </nav>

@@ -2,7 +2,7 @@
      cross-linking to sites/communities). Configure these via
      [[params.badges]] in hugo.toml -- see README for the format. */}}
 {{ with site.Params.badges }}
-<div class="badges">
+<span class="badges">
     {{ range . }}
     <a href="{{ .link | safeURL }}"><img src="{{ .image | relURL }}" alt="{{ .alt }}" title="{{ .alt }}"></a>
     {{ end }}
