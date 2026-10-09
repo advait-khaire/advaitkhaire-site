@@ -3,4 +3,4 @@ title = "Advait's Blog"
 date = 2026-09-26
 +++
 
-All posts, newest first.
+Welcome! This is my personal blog. All posts, newest first.
