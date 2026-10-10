@@ -117,3 +117,7 @@ img {
 footer img {
 	vertical-align: middle;
 }
+
+.reply-to {
+	text-align: right;
+}

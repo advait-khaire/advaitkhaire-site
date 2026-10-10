@@ -2,8 +2,8 @@
 <nav>
 	{{- $isregular := (in .Site.RegularPages .Page) -}}
 	{{- $title := .Title -}}
-	{{- with .Site.Params.links.email -}}
-	{{- if $isregular }}<p style="text-align: right;">[<a href="{{ . }}?subject=RE: {{ $title }}">↰ Reply-to</a>]</p>{{ end }}
+	{{- with .Site.Params.email -}}
+	{{- if $isregular }}<p class="reply-to">[<a href="mailto:{{ . }}?subject=RE: {{ $title }}">↰ Reply-to</a>]</p>{{ end }}
 	{{- end -}}
 	<p>
 	{{- if .IsHome }}{{ else }}<a href="/"><img src="/images/badges/advait.png" alt="{{ .Site.Title }}" title="{{ .Site.Title }}"></a> {{ end -}}
